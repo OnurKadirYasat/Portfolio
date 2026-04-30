@@ -1,4 +1,10 @@
 body {
   font-family: Arial;
+  background: rgb(29, 29, 30);
+  color: white;
   padding: 40px;
+}
+
+header {
+  max-width: 600px;
 }
