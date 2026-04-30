@@ -8,3 +8,17 @@ body {
 header {
   max-width: 600px;
 }
+
+section {
+  margin-top: 40px;
+}
+
+div {
+  background: rgb(38, 38, 38);
+  padding: 15px;
+  margin-top: 10px;
+}
+
+a {
+  color: rgb(104, 104, 252);
+}
