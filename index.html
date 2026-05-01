@@ -7,6 +7,11 @@
   </head>
   <body>
     <main>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+      </nav>
       <header>
         <h1>Onur Yasat</h1>
         <p class="role">Junior Developer</p>
@@ -18,7 +23,7 @@
         </p>
       </header>
 
-      <section>
+      <section id="about">
         <h2>About</h2>
         <p>
           I have a background in business administration and currently work with
@@ -33,7 +38,12 @@
           <div class="project-card">
             <h3>Weather Dashboard</h3>
             <p class="project-tech">HTML · CSS · JavaScript</p>
-            <p>Real-time weather app using OpenWeather API.</p>
+            <p>
+              Weather app that fetches real-time data from an external API and
+              displays temperature, humidity and wind data for any city. Built
+              with JavaScript using async requests and dynamic DOM updates.
+              Includes basic error handling for invalid city inputs.
+            </p>
 
             <div class="project-links">
               <a
@@ -54,7 +64,11 @@
           <div class="project-card">
             <h3>Todo App</h3>
             <p class="project-tech">HTML · CSS · JavaScript</p>
-            <p>Simple task manager with localStorage.</p>
+            <p>
+              Task management app with add, complete and delete functionality.
+              Uses localStorage to persist data across sessions and updates the
+              UI dynamically based on user input.
+            </p>
 
             <div class="project-links">
               <a href="https://todo-app-onur.netlify.app" target="_blank">
@@ -69,6 +83,27 @@
             </div>
           </div>
         </div>
+        <section id="experience">
+          <h2>Experience</h2>
+
+          <div class="project-card">
+            <h3>Data & Systems Support – BSH</h3>
+            <p>
+              Working with enterprise data and scheduling systems in SAP.
+              Supporting teams in resolving data issues and maintaining data
+              accuracy in daily operations.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Information Management – Vodafone</h3>
+            <p>
+              Managed and processed large datasets with focus on accuracy.
+              Collaborated with teams to resolve data-related issues and improve
+              workflows.
+            </p>
+          </div>
+        </section>
       </section>
     </main>
   </body>
