@@ -2,6 +2,8 @@
 
 This is my personal portfolio website.
 
+Live: https://onur-yasat.netlify.app
+
 ## Projects
 - Weather Dashboard
 - Todo App
@@ -9,4 +11,3 @@ This is my personal portfolio website.
 ## Tech
 - HTML
 - CSS
-- JavaScript
