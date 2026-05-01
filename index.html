@@ -11,16 +11,25 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <header>
-        <h1>Onur Yasat</h1>
-        <p class="role">Junior Developer</p>
-        <p class="intro">
-          I'm currently working at BSH and started learning programming through
-          CS50. Since then, I've been building my own projects and improving my
-          skills in JavaScript. My goal is to transition into a junior developer
-          role and work on real-world applications.
-        </p>
+      <header class="hero">
+        <div class="hero-left">
+          <p class="role">Junior Developer</p>
+
+          <h1>Onur Yasat</h1>
+          <p class="sub">
+            Building web applications with JavaScript and focusing on real-world
+            projects.
+          </p>
+          <p class="intro">
+            I'm currently working at BSH and started learning programming
+            through CS50. Since then, I've been building my own projects and
+            improving my skills in JavaScript. My goal is to transition into a
+            junior developer role and work on real-world applications.
+          </p>
+        </div>
+        <img src="profile.JPG" alt="Onur Yasat" class="profile-pic" />
       </header>
 
       <section id="about">
@@ -30,6 +39,28 @@
           data and systems. I'm transitioning into software development and
           focusing on JavaScript and backend development.
         </p>
+        <div class="skills-box">
+          <p><strong>Skills</strong></p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>SAP</span>
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <p><strong>Languages</strong></p>
+          <div class="tags">
+            <span>German</span>
+            <span>English</span>
+            <span>Turkish</span>
+            <span>Spanish</span>
+          </div>
+        </div>
       </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -37,13 +68,12 @@
         <div class="projects-grid">
           <div class="project-card">
             <h3>Weather Dashboard</h3>
-            <p class="project-tech">HTML · CSS · JavaScript</p>
             <p>
-              Weather app that fetches real-time data from an external API and
-              displays temperature, humidity and wind data for any city. Built
-              with JavaScript using async requests and dynamic DOM updates.
-              Includes basic error handling for invalid city inputs.
+              Weather app that fetches real-time data from an API and displays
+              key metrics like temperature and wind. Built with JavaScript using
+              async requests and DOM updates.
             </p>
+            <p class="project-tech">HTML · CSS · JavaScript · API</p>
 
             <div class="project-links">
               <a
@@ -63,12 +93,12 @@
 
           <div class="project-card">
             <h3>Todo App</h3>
-            <p class="project-tech">HTML · CSS · JavaScript</p>
             <p>
               Task management app with add, complete and delete functionality.
               Uses localStorage to persist data across sessions and updates the
               UI dynamically based on user input.
             </p>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
 
             <div class="project-links">
               <a href="https://todo-app-onur.netlify.app" target="_blank">
@@ -83,28 +113,47 @@
             </div>
           </div>
         </div>
-        <section id="experience">
-          <h2>Experience</h2>
-
-          <div class="project-card">
-            <h3>Data & Systems Support – BSH</h3>
-            <p>
-              Working with enterprise data and scheduling systems in SAP.
-              Supporting teams in resolving data issues and maintaining data
-              accuracy in daily operations.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Information Management – Vodafone</h3>
-            <p>
-              Managed and processed large datasets with focus on accuracy.
-              Collaborated with teams to resolve data-related issues and improve
-              workflows.
-            </p>
-          </div>
-        </section>
       </section>
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="exp-item">
+          <h3>Data & Systems Support</h3>
+          <p class="exp-meta">BSH · Valencia · 2025 – Present</p>
+          <p>
+            Managing operational data and scheduling in SAP across multiple
+            departments. Supporting technical teams in troubleshooting system
+            issues and ensuring data accuracy in a high-volume enterprise
+            environment.
+          </p>
+        </div>
+
+        <div class="exp-item">
+          <h3>Information Management – Vodafone</h3>
+          <p class="exp-meta">Vodafone · Berlin · 2022 – 2024</p>
+          <p>
+            Managed and processed large datasets with focus on accuracy.
+            Collaborated with teams to resolve data-related issues and improve
+            workflows.
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+          I'm currently open to internship and junior developer opportunities.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:onur.yasat@hotmail.com">Email</a>
+          <a href="https://github.com/OnurKadirYasat" target="_blank">GitHub</a>
+          <a href="www.linkedin.com/in/onur-kadir-yasat-b02728341">LinkedIn</a>
+        </div>
+      </section>
+      <footer>
+        <p>© 2026 Onur Yasat · Built with HTML, CSS & JavaScript</p>
+      </footer>
     </main>
   </body>
 </html>

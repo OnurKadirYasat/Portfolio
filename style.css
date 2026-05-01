@@ -7,31 +7,59 @@ body {
 
 header {
   max-width: 600px;
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 section {
-  margin-top: 40px;
+  margin-top: 100px;
+  scroll-margin-top: 90px;
 }
 
 a {
   color: rgb(104, 104, 252);
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 5px;
+  font-size: 60px;
+  margin-bottom: 12px;
+  line-height: 1.05;
+  color: rgb(127, 255, 178);
 }
 
 h2 {
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 p {
   line-height: 1.6;
+  color: rgb(200, 200, 200);
 }
 
 main {
   padding-top: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(120, 120, 120);
+  font-size: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 .nav {
@@ -40,53 +68,115 @@ main {
   left: 0;
   right: 0;
   background: rgb(29, 29, 30);
-  padding: 15px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
   border-bottom: 1px solid rgb(50, 50, 50);
+  z-index: 100;
 }
 
 .nav a {
   color: rgb(170, 170, 170);
   text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 .nav a:hover {
   color: white;
 }
 
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 120px;
+  margin-bottom: 200px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.hero-left {
+  max-width: 520px;
+  padding-top: 30px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
 .role {
+  font-size: 12px;
   color: rgb(127, 255, 178);
-  margin-bottom: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.sub {
+  font-size: 18px;
+  color: rgb(210, 210, 210);
+  margin-bottom: 16px;
+  max-width: 500px;
 }
 
 .intro {
   color: rgb(170, 170, 170);
   line-height: 1.6;
+  max-width: 520px;
+}
+
+.skills-box {
+  margin-top: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tags span {
+  font-size: 12px;
+  background: rgb(40, 40, 50);
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(127, 255, 178);
+  color: rgb(200, 255, 220);
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 25px;
 }
 
 .project-card {
   background: rgb(19, 19, 26);
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid transparent;
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid rgb(40, 40, 50);
   transition: 0.2s;
+  margin-bottom: 15px;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border: 1px solid rgb(127, 255, 178);
 }
 
 .project-links {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .project-links a {
@@ -110,11 +200,66 @@ main {
 
 .project-tech {
   font-size: 12px;
-  color: rgb(127, 255, 178);
-  margin-top: 10px;
+  color: rgb(140, 140, 140);
+  margin-top: 12px;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.exp-item {
+  background: rgb(19, 19, 26);
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid rgb(40, 40, 50);
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+.exp-item:hover {
+  border: 1px solid rgb(127, 255, 178);
+  transform: translateY(-3px);
+}
+
+.exp-meta {
+  font-size: 12px;
+  color: rgb(140, 140, 140);
+  margin-bottom: 8px;
+}
+
+.project-card,
+.exp-item {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.contact-links a {
+  color: rgb(91, 200, 255);
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-top: 20px;
+  }
 }
