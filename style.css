@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   background: rgb(29, 29, 30);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 40px;
 }
 
@@ -13,12 +13,82 @@ section {
   margin-top: 40px;
 }
 
-div {
-  background: rgb(38, 38, 38);
-  padding: 15px;
+a {
+  color: rgb(104, 104, 252);
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.role {
+  color: rgb(127, 255, 178);
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: rgb(170, 170, 170);
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgb(19, 19, 26);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgb(127, 255, 178);
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  color: rgb(91, 200, 255);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-card p:not(.project-tech) {
+  color: rgb(170, 170, 170);
+  font-size: 14px;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-tech {
+  font-size: 12px;
+  color: rgb(127, 255, 178);
   margin-top: 10px;
 }
 
-a {
-  color: rgb(104, 104, 252);
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }

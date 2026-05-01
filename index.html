@@ -6,51 +6,70 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Onur Yasat</h1>
-    <p>Junior Developer</p>
-    <p>
-      I'm currently working at BSH and started learning programming through
-      CS50. Over time, I got really into building my own projects and improving
-      my skills.
-    </p>
-    <section>
-      <h2>About</h2>
-      <p>
-        I have a background in business administration and currently work with
-        data and systems. I'm transitioning into software development and
-        focusing on JavaScript and backend development.
-      </p>
-    </section>
-    <section>
-      <h2>Projects</h2>
+    <main>
+      <header>
+        <h1>Onur Yasat</h1>
+        <p class="role">Junior Developer</p>
+        <p class="intro">
+          I'm currently working at BSH and started learning programming through
+          CS50. Since then, I've been building my own projects and improving my
+          skills in JavaScript. My goal is to transition into a junior developer
+          role and work on real-world applications.
+        </p>
+      </header>
 
-      <div>
-        <h3>Weather Dashboard</h3>
-        <p>Weather app using an API to display live data.</p>
-        <a href="https://weather-dashboard-onur.netlify.app" target="_blank">
-          Live
-        </a>
-        <a
-          href="https://github.com/OnurKadirYasat/Weather-dashboard"
-          target="_blank"
-        >
-          GitHub
-        </a>
-      </div>
+      <section>
+        <h2>About</h2>
+        <p>
+          I have a background in business administration and currently work with
+          data and systems. I'm transitioning into software development and
+          focusing on JavaScript and backend development.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
 
-      <div>
-        <h3>Todo App</h3>
-        <p>Simple task manager with localStorage.</p>
-        <a href="https://todo-app-onur.netlify.app" target="_blank">Live</a>
-        <a href="https://github.com/OnurKadirYasat/Todo-app" target="_blank">
-          GitHub
-        </a>
-      </div>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Email: onur.yasat@hotmail.com</p>
-      <a href="https://github.com/OnurKadirYasat">GitHub</a>
-    </section>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Weather Dashboard</h3>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <p>Real-time weather app using OpenWeather API.</p>
+
+            <div class="project-links">
+              <a
+                href="https://weather-dashboard-onur.netlify.app"
+                target="_blank"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/OnurKadirYasat/Weather-dashboard"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Todo App</h3>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <p>Simple task manager with localStorage.</p>
+
+            <div class="project-links">
+              <a href="https://todo-app-onur.netlify.app" target="_blank">
+                Live
+              </a>
+              <a
+                href="https://github.com/OnurKadirYasat/Todo-app"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
